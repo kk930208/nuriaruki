@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ぬりあるき — サポート</title>
+  <style>
+:root {
+      --bg: #f5f7fa; --card: #ffffff; --text: #222222;
+      --muted: #555555; --accent: #2e8b57; --border: #e2e6ea;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+      background: var(--bg); color: var(--text); line-height: 1.8; font-size: 17px;
+    }
+    header { background: var(--accent); color: #fff; padding: 32px 20px; text-align: center; }
+    header h1 { margin: 0; font-size: 1.4rem; line-height: 1.5; }
+    main { max-width: 720px; margin: 0 auto; padding: 24px 20px 48px; }
+    section { background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 24px; margin-bottom: 20px; }
+    h2 { font-size: 1.2rem; margin-top: 0; color: var(--accent);
+      border-bottom: 2px solid var(--border); padding-bottom: 8px; }
+    p { margin: 0 0 12px; }
+    a { color: var(--accent); word-break: break-all; }
+    .faq-q { font-weight: bold; margin-top: 20px; margin-bottom: 4px; }
+    .faq-a { color: var(--muted); margin: 0; }
+    .meta { color: var(--muted); font-size: 0.95rem; }
+    footer { text-align: center; color: var(--muted); font-size: 0.9rem; padding: 24px 20px 40px; }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header><h1>ぬりあるき<br><span style="font-size:.6em">歩いた道が地図に残る</span></h1></header>
+  <main>
+    <section>
+      <h2>このアプリについて</h2>
+      <p>歩いた道が、そのまま地図に塗られていきます。
+        いつもの帰り道を一本ずらしてみる。知らない路地に入ってみる。
+        その小さな遠回りが、地図に残ります。</p>
+      <p>塗る単位は、日本の「標準地域メッシュ」を細かく割った区画です。
+        東京でおよそ 57m × 70m、1km&sup2; を塗るのに 244 区画。
+        区画は緯度経度から決まるので、端末を変えても、入れ直しても、同じ場所は同じ区画になります。</p>
+    </section>
+    <section>
+      <h2>よくあるご質問</h2>
+      <h3>歩いても塗られません</h3>
+      <p>「歩きはじめる」を押しているかご確認ください。押していないあいだは位置情報を取得しないため、塗られません。
+        また、屋内や高いビルの谷間では測位の誤差が大きくなります。
+        本アプリは誤差が 30m を超える測位を使わないので、そうした場所では塗りが止まることがあります。</p>
+      <h3>電車やバスで移動した区間が塗られません</h3>
+      <p>仕様です。前回の地点から 300m 以上離れた測位は、歩いたものとみなさず、距離にも面積にも加えません。
+        乗り物での移動まで塗ってしまうと「歩いた地図」ではなくなるためです。</p>
+      <h3>画面を閉じると記録が止まります</h3>
+      <p>位置情報の設定が「このAppの使用中のみ許可」になっている可能性があります。
+        画面を閉じているあいだも記録を続けるには、iOS の「設定 &gt; プライバシーとセキュリティ &gt; 位置情報サービス &gt; ぬりあるき」で
+        「常に」を選んでください。</p>
+      <h3>電池の減りが気になります</h3>
+      <p>記録しているあいだは位置情報を使い続けるため、通常より電池を消費します。
+        散歩が終わったら「とめる」を押してください。止めれば位置情報の取得も停止します。</p>
+      <h3>塗った地図を消したい</h3>
+      <p>「設定」から消去できます。<strong>消した塗りは元に戻せません。</strong></p>
+      <h3>機種変更をしたら塗りは引き継げますか</h3>
+      <p>現在のバージョンでは引き継げません。記録はすべて端末の中にのみ保存されており、
+        当方のサーバーには何も置いていないためです。</p>
+      <h3>履歴から散歩を消すと、塗った地図も消えますか</h3>
+      <p>消えません。履歴の行が消えるだけで、塗った区画はそのまま残ります。歩いた事実まで取り消すものではないためです。</p>
+    </section>
+    <section>
+      <h2>お問い合わせ</h2>
+      <p>ご質問・ご要望は下記までお寄せください。<br>
+        <a href="mailto:kk.apps.support@gmail.com">kk.apps.support@gmail.com</a></p>
+    </section>
+    <section>
+      <p><a href="privacy.html">プライバシーポリシー</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 KK Apps</p>
+  </footer>
+</body>
+</html>
